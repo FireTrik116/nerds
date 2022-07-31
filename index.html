@@ -1,14 +1,68 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.css">
-  <title>Nerds</title>
-</head>
-<body>
-  <header></header>
-  
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Nerds</title>
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="visually-hidden">Сайт Nerds</h1>
+      <div class="container">
+        <a class="page-logo header__logo" href="#">
+          <img
+            class="page-logo__img"
+            src="../img/icon/nerds-logo.svg"
+            width="160"
+            height="65"
+            alt="Логотоп сайта Nerds"
+          />
+        </a>
+        <nav class="nav">
+          <section class="nav-user">
+            <h2 class="visually-hidden">Блок навигации</h2>
+            <ul class="nav-user__item">
+              <li class="nav-user__list">
+                <a class="nav-user__link" href="#">Студиясы</a>
+              </li>
+              <li class="nav-user__list">
+                <a class="nav-user__link" href="#">Клиенты</a>
+              </li>
+              <li class="nav-user__list">
+                <a class="nav-user__link" href="#">Магазин</a>
+              </li>
+              <li class="nav-user__list">
+                <a class="nav-user__link" href="#">Контакты</a>
+              </li>
+              <li class="nav-user__list">
+                <a class="nav-user__link nav-user__link--bascket" href="#"
+                  >Корзина</a
+                >
+              </li>
+            </ul>
+          </section>
+        </nav>
+      </div>
+    </header>
+    <main class="main">
+      <div class="container">
+        <section class="main-slider">
+          <h2 class="visually-hidden">Слайдер</h2>
+          <div class="slider__container">
+            <div class="slider__wrapper">
+              <div class="slider__items">
+                <div class="slider__item">Контент 1 слайда</div>
+                <div class="slider__item">Контент 2 слайда</div>
+                <div class="slider__item">Контент 3 слайда</div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <a href="#" class="slider__control" data-slide="prev"></a>
+        <a href="#" class="slider__control" data-slide="next"></a>
+      </div>
+    </main>
+  </body>
 </html>

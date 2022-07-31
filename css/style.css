@@ -1,8 +1,43 @@
 /* ПЕРЕМЕННЫЕ */
 
 :root {
-  
+  --basic-black-color: #000000;
+  --basic-white-color: #ffffff;
+  --basic-red-color: #FB565A;
+  --basic-green-color: #00CA74;
+  --basic-yellow-color: #EFC849;
+  --basic-tetx-color: #283136;
+  --opasity-color: rgba(0, 0, 0, 0.2);
+
 }
+
+/* ШРИФТЫ */
+
+@font-face {
+  font-family: "Roboto";
+  font-size: 700;
+  font-style: normal;
+  src: local("Roboto"), url("../fonts/robotobold.woff2") format("woff2"),
+  url(../fonts/robotobold.woff) format("woff");
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-size: 500;
+  font-style: normal;
+  src: local("Roboto"), url("../fonts/robotomedium.woff2") format("woff2"),
+  url(../fonts/robotomedium.woff) format("woff");
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-size: 400;
+  font-style: normal;
+  src: local("Roboto"), url("../fonts/robotoregular.woff2") format("woff2"),
+  url(../fonts/robotoregular.woff) format("woff");
+}
+
+/*БАЗАВАЯ РАЗМЕТКА*/
 
 *,
 *::before,
@@ -20,11 +55,12 @@ body {
 
 .container {
   width: 1240px;
+  box-sizing: border-box;
   padding: 0 20px;
   margin: 0 auto;
 }
 
-visually-hodden {
+.visually-hidden {
   position: absolute;
   clip: rect(1px, 1px, 1px, 1px);
   padding: 0;
@@ -41,5 +77,8 @@ a {
 ul {
 list-style: none;
 }
+
+/* БАЗАВАЯ ТИПОГРАФИЯ */
+
 
 /*HEADER*/

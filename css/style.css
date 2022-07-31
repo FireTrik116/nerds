@@ -1,0 +1,45 @@
+/* ПЕРЕМЕННЫЕ */
+
+:root {
+  
+}
+
+*,
+*::before,
+*::after{
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: var(--basic-font);
+  background-color: var(--body-color);
+}
+
+.container {
+  width: 1240px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+visually-hodden {
+  position: absolute;
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0;
+  border: 0;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+list-style: none;
+}
+
+/*HEADER*/

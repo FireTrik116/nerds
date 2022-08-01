@@ -8,21 +8,21 @@
     <title>Nerds</title>
   </head>
   <body>
-    <header class="header">
-      <h1 class="visually-hidden">Сайт Nerds</h1>
-      <div class="container">
-        <a class="page-logo header__logo" href="#">
-          <img
-            class="page-logo__img"
-            src="../img/icon/nerds-logo.svg"
-            width="160"
-            height="65"
-            alt="Логотоп сайта Nerds"
-          />
-        </a>
+    <div class="container">
+      <header class="header">
+        <h1 class="visually-hidden">Сайт Nerds</h1>
         <nav class="nav">
           <section class="nav-user">
             <h2 class="visually-hidden">Блок навигации</h2>
+            <a class="page-logo header__logo" href="#">
+              <img
+                class="page-logo__img"
+                src="../img/icon/nerds-logo.svg"
+                width="160"
+                height="65"
+                alt="Логотоп сайта Nerds"
+              />
+            </a>
             <ul class="nav-user__item">
               <li class="nav-user__list">
                 <a class="nav-user__link" href="#">Студиясы</a>
@@ -36,33 +36,37 @@
               <li class="nav-user__list">
                 <a class="nav-user__link" href="#">Контакты</a>
               </li>
-              <li class="nav-user__list">
-                <a class="nav-user__link nav-user__link--bascket" href="#"
-                  >Корзина</a
-                >
-              </li>
             </ul>
+            <a class="nav-user__link nav-user__link--bascket" href="#"
+              >Корзина</a
+            >
           </section>
         </nav>
-      </div>
-    </header>
-    <main class="main">
-      <div class="container">
-        <section class="main-slider">
-          <h2 class="visually-hidden">Слайдер</h2>
-          <div class="slider__container">
-            <div class="slider__wrapper">
-              <div class="slider__items">
-                <div class="slider__item">Контент 1 слайда</div>
-                <div class="slider__item">Контент 2 слайда</div>
-                <div class="slider__item">Контент 3 слайда</div>
-              </div>
+      </header>
+      <main class="main">
+        <div class="container">
+          <section class="main-slider">
+            <h2 class="visually-hidden">Слайдер</h2>
+
+            <div class="main-slider__slide main-slider__slide--one">
+              Контент 1 слайда
             </div>
-          </div>
+            <div class="main-slider__slide main-slioder__slide--two">
+              Контент 2 слайда
+            </div>
+            <div class="main-slider__slide main-slider__slide--three">
+              Контент 3 слайда
+            </div>
+          </section>
+          <a href="#" class="slider__control" data-slide="prev"></a>
+          <a href="#" class="slider__control" data-slide="next"></a>
+        </div>
+        <section class="service">
+          <div class="service__column service__column--red"></div>
+          <div class="service__column"></div>
+          <div class="service__column"></div>
         </section>
-        <a href="#" class="slider__control" data-slide="prev"></a>
-        <a href="#" class="slider__control" data-slide="next"></a>
-      </div>
-    </main>
+      </main>
+    </div>
   </body>
 </html>

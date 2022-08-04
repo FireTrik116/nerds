@@ -7,6 +7,7 @@
   --basic-green-color: #00CA74;
   --basic-yellow-color: #EFC849;
   --basic-tetx-color: #283136;
+  --footer-background-color: #888888;
   --opasity-color: rgba(0, 0, 0, 0.2);
 
 }
@@ -82,3 +83,6 @@ list-style: none;
 
 
 /*HEADER*/
+.footer{
+  background-color: var(--footer-background-color)
+}

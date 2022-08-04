@@ -137,10 +137,10 @@
               alt="Nerds"
             />
           </div>
+          <b class="about-us__subtitle">
+            с 2004 года Любим точность во всем:
+          </b>
           <table class="about-us__table">
-            <caption>
-              с 2004 года Любим точность во всем:
-            </caption>
             <tr>
               <th>146%</th>
               <th>100%</th>
@@ -157,57 +157,179 @@
         </section>
         <section class="projects">
           <h2 class="visually-hidden">Проекты</h2>
-          <ul class="projects__item">
-            <li class="projects__list">
-              <img
-                class="projects__img"
-                width="199"
-                height="68"
-                src="../img/icon/html-academy.svg"
-                alt="Логотип html-academy"
-              />
-            </li>
-            <li class="projects__list">
-              <img
-                class="projects__img"
-                width="209"
-                height="90"
-                src="../img/icon/borodinski-logo.svg"
-                alt="Логотип сайта Бородинский"
-              />
-            </li>
-            <li class="projects__list">
-              <img
-                class="projects__img"
-                width="185"
-                height="52"
-                src="../img/icon/pink-logo.svg"
-                alt="Логотип сайтй Pink"
-              />
-            </li>
-            <li class="projects__list">
-              <img
-                class="projects__img"
-                width="173"
-                height="84"
-                src="../img/icon/mishka-logo.svg"
-                alt="Логотип сайта Mishka"
-              />
-            </li>
+          <ul class="projects__list">
+            <a class="projects__link" href="#"
+              ><li class="projects__item">
+                <img
+                  class="projects__img"
+                  width="199"
+                  height="68"
+                  src="../img/icon/html-academy.svg"
+                  alt="Логотип html-academy"
+                /></li
+            ></a>
+            <a class="projects__link" href="#">
+              <li class="projects__item">
+                <img
+                  class="projects__img"
+                  width="209"
+                  height="90"
+                  src="../img/icon/borodinski-logo.svg"
+                  alt="Логотип сайта Бородинский"
+                />
+              </li>
+            </a>
+            <a class="projects__link" href="#">
+              <li class="projects__item">
+                <img
+                  class="projects__img"
+                  width="185"
+                  height="52"
+                  src="../img/icon/pink-logo.svg"
+                  alt="Логотип сайтй Pink"
+                />
+              </li>
+            </a>
+
+            <a class="project__link" href="#"
+              ><li class="projects__item">
+                <img
+                  class="projects__img"
+                  width="173"
+                  height="84"
+                  src="../img/icon/mishka-logo.svg"
+                  alt="Логотип сайта Mishka"
+                /></li
+            ></a>
           </ul>
         </section>
         <section class="map">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003006!2d30.32085871595745!3d59.938719169054345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1659521274819!5m2!1sru!2sru"
-            width="600"
+            width="1080"
             height="450"
             style="border: 0"
             allowfullscreen=""
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"
           ></iframe>
+          <div class="map__contacts">
+            <p class="map__title">Nёrds design studio</p>
+
+            <p class="map__text">
+              191186, Санкт-Петербург,<br />ул. Б. Конюшенная, д. 19/8
+            </p>
+
+            <p class="map__text">
+              <a class="map__link" href="tel:+78122757575"
+                >тел.+7 (812) 275-75-75</a
+              >
+            </p>
+
+            <a class="mar__button map__button--red" href="feedback.html"
+              >Напишите нам</a
+            >
+          </div>
         </section>
       </main>
+      <footer class="footer">
+        <div class="footer-social">
+          <ul class="fooetr-social__list">
+            <li class="footer-social__item">
+              <a class="footyer-social__link" href="#"
+                ><img
+                  class="footer-social__img"
+                  width="26"
+                  height="15"
+                  src="../img/icon/vk-icon.svg"
+                  alt="Логотип Вконтакте"
+              /></a>
+            </li>
+            <li class="footer-social__item">
+              <a class="footyer-social__link" href="#"
+                ><img
+                  class="footer-social__img"
+                  width="12"
+                  height="22"
+                  src="../img/icon/fb-icon.svg"
+                  alt="Логотип Facebook"
+              /></a>
+            </li>
+            <li class="footer-social__item">
+              <a class="footyer-social__link" href="#"
+                ><img
+                  class="footer-social__img"
+                  width="21"
+                  height="21"
+                  src="/img/icon/insta-icon.svg"
+                  alt=""
+              /></a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-sentence">
+          <strong class="footer-sentence__title"
+            >Давайте дружить, это выгодно!</strong
+          >
+          <p class="footer-sentence__text">
+            Скидка 10% для друзей из социальных сетей.
+          </p>
+        </div>
+      </footer>
     </div>
+    <section class="feedback">
+      <h2 class="feedback__title">Напишите нам</h2>
+      <form
+        class="feedback-form"
+        action="https://echo.htmlacademy.ru"
+        method="POST"
+      >
+        <div class="feedback-form__wrapper">
+          <label class="feedback-form__label">
+            Ваше имя:
+            <input
+              class="feedback-form__input"
+              type="text"
+              name="name"
+              placeholder="Имя Фамилия"
+              required
+            />
+          </label>
+
+          <label class="feedback-form__label">
+            Ваш email:
+            <input
+              class="feedback-form__input"
+              type="email"
+              name="email"
+              placeholder="email@example.com"
+              required
+            />
+          </label>
+
+          <label class="feedback-form__label">
+            Текст письма:
+            <textarea
+              class="feedback-form__textarea"
+              name="message"
+              placeholder="В свободной форме"
+            ></textarea>
+          </label>
+        </div>
+
+        <button
+          class="feedback-form__button feedback-form__button--red"
+          type="submit"
+        >
+          Отправить
+        </button>
+      </form>
+
+      <button
+        class="feedback-form__button feedback-form__button--close"
+        aria-label="Закрыть"
+        type="button"
+      ></button>
+    </section>
   </body>
 </html>

@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Nerds</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header__container">
+        <h1 class="visually-hidden">Сайт Nerds</h1>
+        <nav class="nav">
+          <section class="nav-user">
+            <h2 class="visually-hidden">Блок навигации</h2>
+            <a class="page-logo header__logo" href="index.html">
+              <img
+                class="page-logo__img"
+                src="img/icon/nerds-logo.svg"
+                width="160"
+                height="65"
+                alt="Логотоп сайта Nerds"
+              />
+            </a>
+            <ul class="nav-user__list">
+              <li class="nav-user__item">
+                <a class="nav-user__link" href="#">Студия</a>
+              </li>
+              <li class="nav-user__item">
+                <a class="nav-user__link" href="#">Клиенты</a>
+              </li>
+              <li class="nav-user__item">
+                <a class="nav-user__link" href="#">Магазин</a>
+              </li>
+              <li class="nav-user__item">
+                <a class="nav-user__link" href="#">Контакты</a>
+              </li>
+            </ul>
+            <a class="nav-user__link nav-user__link--bascket" href="#"
+              >Корзина</a
+            >
+          </section>
+        </nav>
+      </div>
+    </header>
+    <main class="main">
+      <div class="wrap">
+        <h1 class="catalog__title">Магазин готовых шаблонов</h1>
+      </div>
+      <div class="container">
+        <section class="catalog">
+          <h2 class="visually-hidden">Каталог</h2>
+          <div class="catalog-col catalog-col--left">
+            <form class="catalog__form" method="get" action="#">
+              <fieldset class="price">
+                <legend class="price__title title">Стоимость:</legend>
+                <div class="price__control">
+                  <div class="price__scale">
+                    <div class="price__bar"></div>
+                    <div class="price__toogle price__toogle--min"></div>
+                    <div class="price__toogle price__toogle--max"></div>
+                  </div>
+                </div>
+                <div class="price__values">
+                  <label class="price__min"
+                    >от<input class="price__input--min" type="number" value="0"
+                  /></label>
+                  <label class="price__max" for=""
+                    >до
+                    <input
+                      class="price__input--max"
+                      type="number"
+                      value="15000"
+                  /></label>
+                </div>
+              </fieldset>
+              <fieldset class="grid">
+                <legend class="grid__title title">Сетка:</legend>
+                <ul class="grid__list">
+                  <li class="grid__item">
+                    <input
+                      class="grid__input visually-hidden"
+                      type="radio"
+                      name="grid"
+                      checked
+                      value="adaptive"
+                      id="adaptive"
+                    />
+                    <label class="grid__label" for="adaptive">
+                      Адаптивная</label
+                    >
+                  </li>
+                  <li class="grid__item">
+                    <input
+                      class="grid__input visually-hidden"
+                      type="radio"
+                      name="grid"
+                      value="fixed"
+                      id="fixed"
+                    />
+                    <label class="grid__label" for="fixed">Фиксированная</label>
+                  </li>
+                  <li class="grid__item">
+                    <input
+                      class="grid__input visually-hidden"
+                      type="radio"
+                      name="grid"
+                      value="rubber"
+                      id="rubber"
+                    /><label class="grid__label" for="rubber">Резиновая</label>
+                  </li>
+                </ul>
+              </fieldset>
+              <fieldset class="peculiarities">
+                <legend class="peculiarities__title title">Особенности:</legend>
+                <ul class="peculiarities__list">
+                  <li class="peculiarities__item">
+                    <input
+                      class="peculiarities__input visually-hidden"
+                      type="checkbox"
+                      name="peculiarities"
+                      value="slider"
+                      checked
+                      id="slider"
+                    />
+                    <label class="peculiarities__label" for="slider"
+                      >Слайдер</label
+                    >
+                  </li>
+                  <li class="peculiarities__item">
+                    <input
+                      class="peculiarities__input visually-hidden"
+                      type="checkbox"
+                      name="peculiarities"
+                      value="block"
+                      id="block"
+                    />
+                    <label class="peculiarities__label" for="block"
+                      >Блок преимуществ</label
+                    >
+                  </li>
+                  <li class="peculiarities__item">
+                    <input
+                      class="peculiarities__input visually-hidden"
+                      type="checkbox"
+                      name="peculiarities"
+                      value="news"
+                      checked
+                      id="news"
+                    />
+                    <label class="peculiarities__label" for="news"
+                      >Новости</label
+                    >
+                  </li>
+                  <li class="peculiarities__item">
+                    <input
+                      class="peculiarities__input visually-hidden"
+                      type="checkbox"
+                      name="peculiarities"
+                      value="gallery"
+                      id="gallery"
+                    />
+                    <label class="peculiarities__label" for="gallery"
+                      >Галерея</label
+                    >
+                  </li>
+                  <li class="peculiarities__item">
+                    <input
+                      class="peculiarities__input visually-hidden"
+                      type="checkbox"
+                      name="peculiarities"
+                      value="basket"
+                      id="basket"
+                    />
+                    <label class="peculiarities__label" for="basket"
+                      >Корзина</label
+                    >
+                  </li>
+                </ul>
+              </fieldset>
+              <button class="form__button" type="submit">Показать</button>
+            </form>
+          </div>
+          <div class="catalog-col catalog-col__right">
+            <div class="sorting">
+              <div class="sorting__heading">
+                <h3 class="sorting__title">Сортировать:</h3>
+                <ul class="sorting__list">
+                  <li class="sorting__item sorting__item--active">
+                    <button
+                      class="sorting__button sorting__button--active"
+                      type="button"
+                    >
+                      По цене
+                    </button>
+                  </li>
+                  <li class="sorting__item">
+                    <button class="sorting__button" type="button">
+                      По типу
+                    </button>
+                  </li>
+                  <li class="sorting__item">
+                    <button class="sorting__button" type="button">
+                      По названию
+                    </button>
+                  </li>
+                  <li class="sorting__item">
+                    <button
+                      class="sotring__button sotring__button--down"
+                      type="button"
+                    >
+                      <img
+                        class="sorting__img"
+                        src="img/icon/icon-down-active.svg"
+                        alt="Вниз"
+                        width="11"
+                        height="10"
+                      />
+                    </button>
+                  </li>
+                  <li class="sorting__item">
+                    <button
+                      class="sotring__button sotring__button--up"
+                      type="button"
+                    >
+                      <img
+                        class="sorting__img"
+                        src="img/icon/icon-up-active.svg"
+                        alt="Вверх"
+                      />
+                    </button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <section class="map container">
+        <h2 class="visually-hidden">Карта</h2>
+        <div class="map__contacts">
+          <p class="map__title">Nёrds design studio</p>
+
+          <address class="map__text">
+            191186, Санкт-Петербург,<br />ул. Б. Конюшенная, д. 19/8
+          </address>
+
+          <a class="map__link" href="tel:+78122757575"
+            >тел.+7 (812) 275-75-75</a
+          >
+
+          <button class="map__button map__button--red" href="feedback.html">
+            Напишите нам
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer container">
+      <div class="social footer__social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link" href="#"
+              ><img
+                class="social__img"
+                width="26"
+                height="15"
+                src="img/icon/vk-icon.svg"
+                alt="Логотип Вконтакте"
+            /></a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="#"
+              ><img
+                class="social__img"
+                width="12"
+                height="22"
+                src="img/icon/fb-icon.svg"
+                alt="Логотип Facebook"
+            /></a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="#"
+              ><img
+                class="social__img"
+                width="21"
+                height="21"
+                src="img/icon/insta-icon.svg"
+                alt="Логотип Инстаграмма"
+            /></a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__sentence">
+        <strong class="footer__title">Давайте дружить, это выгодно!</strong>
+        <p class="footer__text">Скидка 10% для друзей из социальных сетей.</p>
+      </div>
+    </footer>
+  </body>
+</html>

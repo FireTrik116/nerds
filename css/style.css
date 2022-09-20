@@ -33,7 +33,7 @@
   font-size: 700;
   font-style: normal;
   src: local("Roboto"), url("../fonts/robotobold.woff2") format("woff2"),
-  url(../fonts/robotobold.woff) format("woff");
+  url("../fonts/robotobold.woff") format("woff");
 }
 
 @font-face {
@@ -41,7 +41,7 @@
   font-size: 500;
   font-style: normal;
   src: local("Roboto"), url("../fonts/robotomedium.woff2") format("woff2"),
-  url(../fonts/robotomedium.woff) format("woff");
+  url("../fonts/robotomedium.woff") format("woff");
 }
 
 @font-face {
@@ -49,7 +49,7 @@
   font-size: 400;
   font-style: normal;
   src: local("Roboto"), url("../fonts/robotoregular.woff2") format("woff2"),
-  url(../fonts/robotoregular.woff) format("woff");
+  url("../fonts/robotoregular.woff") format("woff");
 }
 
 /*БАЗАВАЯ РАЗМЕТКА*/
